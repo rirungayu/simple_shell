@@ -19,8 +19,8 @@ int main(void)
 	printf("%s", buffer);
 	}
 
-	if(-1)
-	   return(0);
+	if(feof(stdin))
+	   return(-1);
 	   
 	return (0);
 }
