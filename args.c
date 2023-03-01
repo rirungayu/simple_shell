@@ -8,7 +8,7 @@
  * Return: zero
  **/
 
-int main(char **av)
+int main(int ac, char **av)
 {
 	int counter = 0;
 
