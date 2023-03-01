@@ -14,12 +14,12 @@ int main(int argc, char **argv)
 	char *buffer = malloc(1024);
 	size_t len = 1024;
 
-	while(1)
+	while (1)
 	{
 	printf("$");
-	getline(&buffer,&len, stdin);
+	getline(&buffer, &len, stdin);
 	printf("%s", buffer);
 	}
 	
-	return (0);
+	return(0);
 }
