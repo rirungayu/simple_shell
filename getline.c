@@ -4,12 +4,10 @@
 
 /**
  * main - prints the command that was input
- * @argc: number of arguments
- * @argv: array of arguments
  * Return: zero
  **/
 
-int main(int argc, char **argv)
+int main(void)
 {
 	char *buffer = malloc(1024);
 	size_t len = 1024;
