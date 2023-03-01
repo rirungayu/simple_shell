@@ -7,11 +7,10 @@
  * Return: zero
  **/
 
-int main(int argc, char **argv)
+int main(void)
 {
 	char *arg[] = {"/bin/ls", "-l", "/usr/", NULL};
-	
-	(void)argc;
+
 	if (execve(arg[0],arg, NULL) == -1)
 		perror("error");
 
