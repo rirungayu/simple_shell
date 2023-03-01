@@ -4,10 +4,11 @@
 
 /**
  * main - prints no of arguments
+ @av - array of args
  * Return: zero
  **/
 
-int main(void)
+int main(char **av)
 {
 	int counter = 0;
 
