@@ -4,12 +4,10 @@
 
 /**
  * main - prints no of arguments
- * @ac: numberof args
- * @av: array of args
  * Return: zero
  **/
 
-int main(int ac, char **av)
+int main(void)
 {
 	int counter = 0;
 
