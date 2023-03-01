@@ -4,11 +4,11 @@
 #include <string.h>
 
 /**
- * strtok - splits string into words
+ * split_str - splits string into words
  * Return: zero
  **/
 
-int strtok(void)
+int split_str(void)
 {
 	char *buffer = malloc(1024);
 	size_t len = 1024;
