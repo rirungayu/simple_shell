@@ -24,7 +24,7 @@ int args(int ac, char **av)
 	printf("\n");
 
 	if (feof(stdin))
-		fclose(stdin);
+		return(0);
 	return (0);
 }
 
