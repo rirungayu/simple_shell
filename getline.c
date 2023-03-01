@@ -4,8 +4,8 @@
 
 /**
  * main - prints the command that was input
- * argc: number of arguments
- * argv: array of arguments
+ * @argc: number of arguments
+ * @argv: array of arguments
  * Return: zero
  **/
 
