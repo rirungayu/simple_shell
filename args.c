@@ -3,12 +3,12 @@
 #include <unistd.h>
 
 /**
- * main - prints no of arguments
+ * args - prints no of arguments
  * @av - array of args
  * Return: zero
  **/
 
-int main(int ac, char **av)
+int args(int ac, char **av)
 {
 	int counter = 0;
 	
