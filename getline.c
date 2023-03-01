@@ -11,17 +11,18 @@
 
 int main(int argc, char **argv )
 {
-	char *buffer = malloc(1024);
-	size_t len = 1024;
+	/*char *buffer = malloc(1024);
+	size_t len = 1024;*/
+	char **command;
 
 	(void)argc;
 	while (!feof(stdin))
 	{
 	printf("getline$ ");
 	/*getline(&buffer, &len, stdin);*/
-	execve(argv[0], argv, NULL);
+	command = "/bin/"
+	execve(argv[1], argv);
 	}
 
-	   
 	return (0);
 }
