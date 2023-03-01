@@ -12,9 +12,9 @@
 int args(int ac, char **av)
 {
 	int counter = 0;
-	
+
 	(void)ac;
-	
+
 	while (av)
 	{
 		printf("%s", av[counter]);
@@ -22,8 +22,8 @@ int args(int ac, char **av)
 	}
 
 	printf("\n");
-	
-	if(feof(stdin))
+
+	if (feof(stdin))
 		fclose(stdin);
 	return (0);
 }
