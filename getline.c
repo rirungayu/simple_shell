@@ -20,6 +20,6 @@ int main(int argc, char **argv)
 	getline(&buffer, &len, stdin);
 	printf("%s", buffer);
 	}
-	
+
 	return (0);
 }
