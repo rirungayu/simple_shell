@@ -18,7 +18,7 @@ int main(int argc, char **argv )
 	while (!feof(stdin))
 	{
 	printf("getline$ ");
-	getline(&buffer, &len, stdin);
+	/*getline(&buffer, &len, stdin);*/
 	execve(argv[0], argv, NULL);
 	}
 
