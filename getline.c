@@ -19,7 +19,7 @@ int main(void)
 	printf("%s", buffer);
 	}
 
-	if(feof(stdin))
+	if(-1)
 	   return(0);
 	   
 	return (0);
