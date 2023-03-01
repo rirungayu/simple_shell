@@ -12,7 +12,7 @@ int main(int ac, char **av)
 {
 	int counter = 0;
 	
-	while (counter < ac)
+	while (av)
 	{
 		printf("%s", av[counter]);
 		counter += 1;
