@@ -5,6 +5,7 @@
 /**
  * args - prints no of arguments
  * @av - array of args
+ * @ac - number of args
  * Return: zero
  **/
 
