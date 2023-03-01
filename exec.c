@@ -3,11 +3,11 @@
 #include <unistd.h>
 
 /**
- * main - executes a program
+ * exec - executes a program
  * Return: zero
  **/
 
-int main(void)
+int exec(void)
 {
 	char *arg[] = {"/bin/ls", "-l", "/usr/", NULL};
 
