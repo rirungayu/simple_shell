@@ -12,15 +12,13 @@ int main(void)
 	char *buffer = malloc(1024);
 	size_t len = 1024;
 
-	while (1)
+	while (!feof(stdin))
 	{
 	printf("$");
 	getline(&buffer, &len, stdin);
 	printf("%s", buffer);
 	}
 
-	if(feof(stdin))
-	   return(-1);
 	   
 	return (0);
 }
