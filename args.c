@@ -4,8 +4,8 @@
 
 /**
  * main - prints no of arguments
- * ac: numberof args
- * av: array of args
+ * @ac: numberof args
+ * @av: array of args
  * Return: zero
  **/
 
