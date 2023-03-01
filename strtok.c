@@ -14,17 +14,17 @@ int main(void)
 	size_t len = 1024;
 	char *token;
 
-	while(1)
+	while (1)
 	{
 		printf("$");
 		getline(&buffer, &len, stdin);
 
 		token = strtok(buffer, " ");
-		while(token)
+		while (token)
 		{
 			printf("%s\n", token);
 			token = strtok(NULL, " ");
 		}
 	}
-	return(0);
+	return (0);
 }
