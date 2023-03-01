@@ -3,11 +3,11 @@
 #include <unistd.h>
 
 /**
- * main -get the pid
+ * pid -get the pid
  * Return: zero
  **/
 
-int main(void)
+int pid(void)
 {
 	pid_t cur_pid;
 
