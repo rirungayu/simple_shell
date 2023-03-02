@@ -17,11 +17,8 @@ int main(int argc, char **argv)
 
 	(void) argc;
 	(void) argv;
-	printf("getline$ ");
-	getline(&buffer, &len, stdin);
-	printf("%s", buffer);
 	
-	if(execve(buffer, arg, env) == -1)
+	if(execve(argv[1], arg, env) == -1)
 	{
 		perror("error!");
 	}
