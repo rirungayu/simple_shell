@@ -24,7 +24,10 @@ int main(int argc, char **argv)
 	command = strcat(path, buffer);
 	printf("%s", command);
 	if(execve(path, arg, env) == -1);
+	{
 		perror("error!");
+	}
+	
 	return(0);
 }
 
