@@ -9,13 +9,11 @@
  * Return: zero
  **/
 
-int main(int argc, char **argv )
+int main(void)
 {
 	char *buffer = malloc(1024);
 	size_t len = 1024;
-	char **command;
 
-	(void)argc;
 	while (1)
 	{
 	printf("getline$ ");
