@@ -10,10 +10,8 @@
 
 int main(int argc, char **argv)
 {
-	char path[] = "/usr";
 	char *arg[] = {"ls", "-l", NULL};
 	char *env[] = {NULL};
-	char *command;
 	char *buffer = malloc(1024);
 	size_t len = 1024;
 
@@ -21,10 +19,9 @@ int main(int argc, char **argv)
 	(void) argv;
 	printf("getline$ ");
 	getline(&buffer, &len, stdin);
-	command = strcat(path, buffer);
-	printf("%s", command);
+	printf("%s", buffer);
 	
-	if(execve(path, arg, env) == -1)
+	if(execve(buffer, arg, env) == -1)
 	{
 		perror("error!");
 	}
