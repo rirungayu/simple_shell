@@ -10,15 +10,12 @@
 
 int main(int argc, char **argv)
 {
-	char *arg[] = {"ls", "-l", NULL};
 	char *env[] = {NULL};
-	char *buffer = malloc(1024);
-	size_t len = 1024;
 
 	(void) argc;
 	(void) argv;
 	
-	if(execve(argv[1], arg, env) == -1)
+	if(execve(argv[1], argv, env) == -1)
 	{
 		perror("error!");
 	}
