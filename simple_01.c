@@ -10,7 +10,7 @@
 
 int main(int argc, char **argv)
 {
-	char path[] = "/usr/bin/ls";
+	char path[] = "/usr";
 	char *arg[] = {"ls", "-l", NULL};
 	char *env[] = {NULL};
 	char *command;
