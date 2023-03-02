@@ -23,7 +23,8 @@ int main(int argc, char **argv)
 	getline(&buffer, &len, stdin);
 	command = strcat(path, buffer);
 	printf("%s", command);
-	if(execve(path, arg, env) == -1);
+	
+	if(execve(path, arg, env) == -1)
 	{
 		perror("error!");
 	}
