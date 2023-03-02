@@ -1,3 +1,4 @@
+#include <string.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -9,9 +10,10 @@
 
 int main(int argc, char **argv)
 {
-	char command[] = "/usr/bin/ls";
-	char *arg[] = {"cd",NULL};
+	char path[] = "/usr/bin/ls";
+	char *arg[] = {"ls", "-l", NULL};
 	char *env[] = {NULL};
+	char *command;
 	char *buffer = malloc(1024);
 	size_t len = 1024;
 
@@ -19,9 +21,9 @@ int main(int argc, char **argv)
 	(void) argv;
 	printf("getline$ ");
 	getline(&buffer, &len, stdin);
-	printf("%s", strcat(command, buffer));
-	execve(command, arg, env);
-
+	command = strcat(path, buffer);
+	printf("%s", command);
+	execve(path, arg, env);
 	return(0);
 }
 
